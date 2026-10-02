@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "Tiệm Xôi Bà Tám – Ai Mua Xôi Đi",
+  "short_name": "Xôi Bà Tám",
+  "description": "Game pixel quản lý hàng xôi: đồ xôi, ra chợ bán, giúp Bà Tám trả nợ trong 7 ngày.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "portrait",
+  "background_color": "#1a1016",
+  "theme_color": "#1a1016",
+  "categories": ["games"],
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

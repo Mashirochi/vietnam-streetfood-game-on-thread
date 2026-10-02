@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1a1016">
+<title>Tiệm Xôi Bà Tám</title>
+<style>
+  /* Chừa vùng thanh trạng thái / tai thỏ ngay từ đầu (trước khi style.css tải xong) */
+  html, body { margin: 0; height: 100%; background: #1a1016; }
+  body { box-sizing: border-box; padding-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px)); padding-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px)); }
+  @media (display-mode: fullscreen), (display-mode: standalone) {
+    body { padding-top: max(28px, var(--safe-area-inset-top, env(safe-area-inset-top, 0px))); }
+  }
+</style>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Xôi Bà Tám">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css?v=20261002-1011">
+<link rel="icon" href="assets/img/xoi_gac.png">
+</head>
+<body>
+<div id="app">
+  <canvas id="scene" width="180" height="320"></canvas>
+  <div id="ui"></div>
+  <div id="hud" class="hidden"></div>
+  <div id="floats"></div>
+  <div id="dialog" class="hidden"></div>
+  <div id="modal" class="hidden"></div>
+  <div id="fade"></div>
+</div>
+<script src="js/app.js?v=20261002-1011" defer></script>
+</body>
+</html>

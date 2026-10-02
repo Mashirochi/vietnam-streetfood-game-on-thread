@@ -1,0 +1,26 @@
+{
+  "name": "Tiệm Trà Nhỏ",
+  "short_name": "Tiệm Trà Nhỏ",
+  "description": "Game mở tiệm trà sữa nhỏ: nấu nguyên liệu, pha đúng món, đón khách, quản lý lãi lỗ.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fdf3e4",
+  "theme_color": "#ef6f8e",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

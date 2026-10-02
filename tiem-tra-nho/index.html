@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="color-scheme" content="only light">
+  <title>Tiệm Trà Nhỏ</title>
+  <meta name="theme-color" content="#fdf3e4">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Tiệm Trà Nhỏ">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="h-l">
+        <button id="pauseBtn" class="pbtn" aria-label="Tạm dừng"><img class="ico" src="img/ic_pause.png" alt=""></button>
+        <button id="setBtn" class="pbtn gear" aria-label="Cài đặt"><img class="ico" src="img/ic_set.png" alt=""></button>
+        <div>Ngày <span id="hDay">1</span><small id="hSub">Chuẩn bị</small></div>
+      </div>
+      <div class="h-m"><small id="hName"></small><span id="hMoney">0đ</span></div>
+      <div class="h-r"><span class="stars" id="hStars">★★★★☆</span><small id="hRate">4,0</small></div>
+    </header>
+    <div class="awning"></div>
+    <main id="view"></main>
+  </div>
+  
+  <div class="toast" id="toast"></div>
+  <div class="modal" id="modal" hidden><div class="card" id="card"></div></div>
+  <div class="splash" id="splash" hidden></div>
+
+  <!-- Game Logic -->
+  <script src="game.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js").then(r => r.update()).catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>

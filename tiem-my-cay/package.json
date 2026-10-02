@@ -1,0 +1,13 @@
+{
+  "name": "tiem-my-cay",
+  "version": "1.0.0",
+  "description": "Game Tiệm Mì Cay - Chơi offline / local",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve ."
+  },
+  "keywords": ["game", "tiem-my-cay", "pwa"],
+  "author": "",
+  "license": "MIT"
+}
